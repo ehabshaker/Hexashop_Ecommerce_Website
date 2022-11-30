@@ -72,11 +72,18 @@ function removeItem(numOfProduct, arr, key) {
 }
 
 // If This Page Is Fav Page
-if (window.location.pathname == "/favPage.html") {
+if (
+  window.location.pathname == "/favPage.html" ||
+  window.location.pathname == "/Hexashop_Ecommerce_Website/favPage.html"
+) {
   showItemsInPage(favProducts);
 }
 
 // If This Page Is Choosen Product Page
-if (window.location.pathname == "/choosenCartsPage.html") {
+if (
+  ((window.location.pathname == "/choosenCartsPage.html") ==
+    window.location.pathname) ==
+  "/Hexashop_Ecommerce_Website/choosenCartsPage.html"
+) {
   showItemsInPage(choosenProducts);
 }
