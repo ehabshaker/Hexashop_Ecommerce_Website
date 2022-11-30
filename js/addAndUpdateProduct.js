@@ -12,7 +12,7 @@ let productImage;
 formCategory.addEventListener("change", getCategory);
 formImage.addEventListener("change", uploadImageFile);
 
-if (window.location.pathname == "/editProduct.html") {
+if (window.location.pathname == "/editProduct.html" || window.location.pathname == "/Hexashop_Ecommerce_Website/editProduct.html") {
   // If This Page Is Upadte Page
   mainForm.addEventListener("submit", onUpdate);
 } else {
@@ -96,7 +96,7 @@ function resetValues() {
 
 let currentEditProduct = allProduct[+localStorage.getItem("editProductId")];
 
-if (window.location.pathname == "/editProduct.html") {
+if (window.location.pathname == "/editProduct.html" || window.location.pathname == "/Hexashop_Ecommerce_Website/editProduct.html") {
   formTitle.value = currentEditProduct.title;
   formPrice.value = currentEditProduct.price;
   formCategory.value = currentEditProduct.arrayName;
