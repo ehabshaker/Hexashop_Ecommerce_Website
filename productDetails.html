@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HexaShop | Product Details</title>
+
+  <!-- Main Css File -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/productDetails.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <nav id="logged-nav">
+          <ul class="second-nav">
+            <li class="logged"> <a href="login.html"> Sign In </a></li>
+            <li class="logged"> <a href="register.html"> Sign Up </a></li>
+            <li class="carts">
+              <a href="#" class="shopping-icon">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="count-carts"></span>
+              </a>
+              <div class="carts-items">
+                <div class="items"></div>
+                <button class="carts-items-btn"> Show All Products </button>
+              </div>
+            </li>
+            <li><a class="user-name" href="profilePage.html"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <section class="productDB">
+      <div class="container">
+        <div class="product-details"></div>
+      </div>
+    </section>
+    
+    <script src="js/userChecked.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/productDetails.js"></script>
+</body>
+</html>

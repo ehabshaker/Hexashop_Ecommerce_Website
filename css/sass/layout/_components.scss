@@ -1,0 +1,23 @@
+@use '../vars/vars' as *;
+
+.main-heading {
+  margin-bottom: 60px;
+}
+.main-heading h2 {
+  color: $main-color;
+  font-weight: 700;
+  font-size: 34px;
+}
+.main-heading p {
+  color: $secondery-color;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 5px dotted #ddd;
+}

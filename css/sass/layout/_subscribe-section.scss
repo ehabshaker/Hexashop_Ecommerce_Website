@@ -1,0 +1,66 @@
+.subscribe-content {
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    .left {
+      width: 60%;
+    }
+    .right {
+      width: 38%;
+    }
+  }
+  .left {
+    .main-heading {
+      margin-bottom: 10px;
+    }
+    form {
+      margin-top: 25px;
+      @media (min-width: 992px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+      }
+      input {
+        width: 100%;
+        border: 1px solid #a1a1a1;
+        padding: 12px 20px;
+        font-size: 14px;
+        font-style: italic;
+        margin: 10px 0;
+        &:focus {
+          outline: 0;
+        }
+      }
+      a {
+        display: block;
+        width: 120px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+        background-color: #2a2a2a;
+        margin: 20px 0;
+      }
+    }
+  }
+  .right {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    .text {
+      h3 {
+        color: #2a2a2a;
+      }
+      p {
+        color: #a1a1a1;
+        font-size: 14px;
+      }
+      a {
+        color: #a1a1a1;
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.shopping-icon {
+  color: #2a2a2a;
+}
+.productDB {
+  text-align: center;
+  margin: 30px 0;
+  border-bottom: none;
+  .product-details {
+    box-shadow: 0px 2px 15px #fdeaea;
+    padding: 20px;
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #2a2a2a;
+      font-size: 32px;
+    }
+    p {
+      margin: 15px;
+      color: #a1a1a1;
+      line-height: 1.6;
+    }
+    p:last-of-type {
+      color: #2a2a2a;
+      font-size: 25px;
+    }
+  }
+}

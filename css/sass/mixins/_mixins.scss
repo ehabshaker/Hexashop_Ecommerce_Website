@@ -1,0 +1,25 @@
+@mixin breakPoints($point) {
+  @if $point == mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == small {
+    @media (min-width: 767px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (min-width: 991px){
+      @content;
+    }
+  } @else if $point == large {
+    @media (min-width: 1199px) {
+      @content;
+    }
+  }
+}
+
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,41 @@
+@use '../mixins/mixins' as *;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  @include breakPoints(mobile) {
+    width: 100%;
+  }
+  @include breakPoints(small) {
+    width: 750px;
+  }
+  @include breakPoints(medium) {
+    width: 970px;
+  }
+  @include breakPoints(large) {
+    width: 1170px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

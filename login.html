@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping cart | Login Page</title>
+  <!-- Main Css Files -->
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Start Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+      </div>
+      <nav id="logged-nav">
+        <ul class="second-nav">
+          <li> <a href="login.html"> Sign In </a></li>
+          <li> <a href="register.html"> Sign Up </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Section Form -->
+  <section class="section-form">
+    <div class="form-content">
+      <h2>Please Login</h2>
+      <form action="">
+        <div class="form-control">
+          <input type="text" required id="email">
+          <label>Email</label>
+        </div>
+
+        <div class="form-control">
+          <input type="password" required id="password">
+          <label>Password</label>
+        </div>
+
+        <button class="btn" id="login-btn">Login</button>
+        <p class="form-text"> Don't have an account? <a href="register.html">Register</a></p>
+      </form>
+    </div>
+  </section>
+  <!-- End Section Form -->
+
+  <script src="js/login.js"></script>
+</body>
+</html>

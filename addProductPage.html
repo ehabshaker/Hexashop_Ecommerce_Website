@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HexaShop | Add Product</title>
+
+  <!-- Main Css File -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/addProduct.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+        <nav id="logged-nav">
+          <ul class="second-nav">
+            <li class="logged"> <a href="login.html"> Sign In </a></li>
+            <li class="logged"> <a href="register.html"> Sign Up </a></li>
+            <li class="carts">
+              <a href="#" class="shopping-icon">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="count-carts"></span>
+              </a>
+              <div class="carts-items">
+                <div class="items"></div>
+                <button class="carts-items-btn"> Show All Products </button>
+              </div>
+            </li>
+            <li><a class="user-name" href="profilePage.html"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <section class="form-section">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Add Product</h2>
+          <p>Check out all of our products.</p>
+        </div>
+
+        <form id="create-form">
+          <input type="file" id="form-image">
+          <input id="form-title" type="text" placeholder="Enter Product Title">
+          <input id="form-price" type="number" placeholder="Enter Product Price">
+
+          <select id="form-category">
+            <option value="" hidden>Select Category</option>
+            <option value="productsMen">Men Category</option>
+            <option value="productsWomen">Women Category</option>
+            <option value="productsKids">Kids Category</option>
+          </select>
+
+          <input type="submit" value="Create Product">
+
+        </form>
+      </div>  
+    </section>
+    <!-- End Man Section -->
+
+    <script src="js/userChecked.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/addAndUpdateProduct.js"></script>
+</body>
+</html>
