@@ -81,9 +81,8 @@ if (
 
 // If This Page Is Choosen Product Page
 if (
-  ((window.location.pathname == "/choosenCartsPage.html") ==
-    window.location.pathname) ==
-  "/Hexashop_Ecommerce_Website/choosenCartsPage.html"
+  window.location.pathname == "/choosenCartsPage.html" ||
+  window.location.pathname == "/Hexashop_Ecommerce_Website/choosenCartsPage.html"
 ) {
   showItemsInPage(choosenProducts);
 }
